@@ -1,5 +1,65 @@
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args) {//#1
+        int[] arr;
+        arr = new int[]{3, 2, 5};
+        float[] r;
+        r = new float[]{1.57f, 7.654f, 9.986f};
+        System.out.println(r[1]);
+        int[] my;
+        my = new int[3];
+        my[0] = 90;
+        my[1] = 85;
+        my[2] = 80;
+        for (int i = 0; i < 3; i++) {
+            System.out.println(my[i]);
+        }
+        //zadanie #2
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i < arr.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int ii = 0; ii < r.length; ii++) {
+            System.out.print(r[ii]);
+            if (ii < r.length) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i3 = 0; i3 < my.length; i3++) {
+            System.out.print(my[i3]);
+            if (i3 < my.length) {
+                System.out.print(", ");
+            }
+        }
+        //Задание номер 3
+        System.out.println();
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (i != 0)
+                System.out.print(arr[i] + ", ");
+
+            else
+                System.out.print(arr[i]);
+        }
+        System.out.println();
+
+        for (int ii = r.length -1; ii >= 0; ii--) {
+            if (ii !=0)
+                System.out.print(r[ii] + ", ");
+
+            else
+                System.out.print(r[ii]);
+        }
+        System.out.println();
+
+        for (int i3 = my.length -1; i3 >= 0; i3--) {
+            if (i3 !=0)
+                System.out.print(my[i3] + ", ");
+            else System.out.print(my[i3]);
+        }
     }
 }
