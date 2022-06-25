@@ -1,28 +1,65 @@
 public class Main {
-    public static void main(String[] args) {
-        int I = 0;
-        while (I < 10) {
-            I++;
-            System.out.print(I + " ");
+    public static void main(String[] args) {//#1
+        int[] arr;
+        arr = new int[]{3, 2, 5};
+        float[] r;
+        r = new float[]{1.57f, 7.654f, 9.986f};
+        System.out.println(r[1]);
+        int[] my;
+        my = new int[3];
+        my[0] = 90;
+        my[1] = 85;
+        my[2] = 80;
+        for (int i = 0; i < 3; i++) {
+            System.out.println(my[i]);
+        }
+        //zadanie #2
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            if (i < arr.length - 1) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
-        for (int i = 10; i > 0; i--) {
-            System.out.print(i + " ");
+        for (int ii = 0; ii < r.length; ii++) {
+            System.out.print(r[ii]);
+            if (ii < r.length) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
-        //Задание №2
-        int f = 5;
-        int necessaryFriday = f;
-        for (; necessaryFriday <= 31; necessaryFriday = necessaryFriday + 7) {
-            System.out.println("Сегодня пятница " + necessaryFriday + "-е число. Нужно подготовить отчет");
+        for (int i3 = 0; i3 < my.length; i3++) {
+            System.out.print(my[i3]);
+            if (i3 < my.length) {
+                System.out.print(", ");
+            }
         }
-        // Задание №3
-        int year = 2022 - 200;
-        int lastYear = 2022 + 100;
-        while (year <= lastYear) {
-            year++;
-            if (year % 79 == 0)
-                System.out.println(year);
+        //Задание номер 3
+        System.out.println();
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            if (i != 0)
+                System.out.print(arr[i] + ", ");
+
+            else
+                System.out.print(arr[i]);
+        }
+        System.out.println();
+
+        for (int ii = r.length -1; ii >= 0; ii--) {
+            if (ii !=0)
+                System.out.print(r[ii] + ", ");
+
+            else
+                System.out.print(r[ii]);
+        }
+        System.out.println();
+
+        for (int i3 = my.length -1; i3 >= 0; i3--) {
+            if (i3 !=0)
+                System.out.print(my[i3] + ", ");
+            else System.out.print(my[i3]);
         }
     }
 }
