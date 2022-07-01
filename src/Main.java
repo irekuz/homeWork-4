@@ -47,19 +47,32 @@ public class Main {
         }
         System.out.println();
 
-        for (int ii = r.length -1; ii >= 0; ii--) {
-            if (ii !=0)
-                System.out.print(r[ii] + ", ");
+        for (int i = r.length -1; i >= 0; i--) {
+            if (i !=0)
+                System.out.print(r[i] + ", ");
 
             else
-                System.out.print(r[ii]);
+                System.out.print(r[i]);
         }
         System.out.println();
 
-        for (int i3 = my.length -1; i3 >= 0; i3--) {
-            if (i3 !=0)
-                System.out.print(my[i3] + ", ");
-            else System.out.print(my[i3]);
+        for (int i = my.length -1; i >= 0; i--) {
+            if (i !=0)
+                System.out.print(my[i] + ", ");
+            else System.out.print(my[i]);
+        }
+
+        // Заданеие №4
+        System.out.println();
+
+        for (int i=0; i<arr.length; i++) {
+            if(arr[i]%2==1) {
+                arr[i]+=1;
+            }
+            if(i != arr.length -1)
+                System.out.print(arr[i] + " ,");
+            else
+                System.out.print(arr[i]);
         }
     }
 }
